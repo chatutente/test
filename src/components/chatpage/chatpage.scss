@@ -1,0 +1,71 @@
+chatpage {
+
+.chatpage
+{
+  background:$backgroundimage;
+    background-size:100% 100%;
+}
+
+.chatpagewidth
+{
+    padding: 10px;
+    float: left;
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 5px;
+    color:color($colors,secondary);
+    margin: 8px;
+}
+
+.chatpagewidth1
+{
+    padding: 10px;
+    float: right!important;
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 5px;
+    color:color($colors,secondary);
+    margin: 8px;
+}
+
+.chatpagewidth img,.chatpagewidth1 img
+{
+  float:left;
+   margin-right:10px;
+       max-width: 4rem;
+    max-height: 4rem;
+    border-radius: 2rem
+}
+
+.chatpagewidth ion-avatar
+{
+  margin:0;
+}
+
+.chatpagewidthspan
+{
+  display: inherit;
+  padding: 10px;
+  color:color($colors,primary);
+  text-align:left;
+}
+
+.chatpagewidthspan1
+{
+    float: left;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.bottom_type .bottom_type_first
+{
+  float:left;
+}
+
+.bottom_type .bottom_type_second
+{
+  float:left; 
+  line-height: 37px;
+}
+
+
+
+}

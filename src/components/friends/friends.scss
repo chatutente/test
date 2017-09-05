@@ -1,0 +1,43 @@
+friends {
+
+.friends
+{
+  background:$backgroundimage;
+  background-size:100% 100%;
+}
+
+.friends img
+  {
+  border-radius:$circle;
+  width:88px;
+  height:88px;
+  }
+
+    .distance{
+    border-radius: 6px;
+    border: solid 1px #8e8980;
+    padding: 1px 6px;
+    margin: 1px;
+    float: left;
+    width: 100%;
+    font-size: 11px;
+    color:color($colors,secondary);
+    background: rgba(255, 255, 255, 0.4);
+    text-align:center!important;
+    }
+
+    ion-row {
+    float: left;
+    display: initial !important;
+}
+
+  .col,.col span
+  {
+    text-align: center!important;
+    color: #fff!important;
+    width: 100%;
+    float: left;
+  }
+
+
+}

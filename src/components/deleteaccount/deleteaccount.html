@@ -1,0 +1,28 @@
+
+<ion-header >
+
+  <ion-navbar color="primary">
+    <ion-title><ion-icon name="arrow-back" (click)="closeaccount()"></ion-icon> Delete Account</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="deleteaccount animated bounceInUp">
+  <b>Delete Account?</b>
+  <p>If you delete your account, all your MeetMe photos, posts,and friendships will be deleted permanently.</p>
+<b>Are you sure you want to do this?</b>
+  <ion-col>
+    <ion-col width-50>
+    <button ion-button full color="light">
+      <div>No</div>
+    </button>
+    </ion-col>
+
+    <ion-col width-50>
+    <button ion-button full color="primary">
+      <div>Yes</div>
+    </button>
+    </ion-col>
+  </ion-col>
+</ion-content>

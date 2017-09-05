@@ -1,0 +1,26 @@
+filters {
+
+.scroll-content
+{
+	background:#fff;
+}
+
+.friends
+{
+  background:$backgroundimage;
+    background-size:100% 100%;
+}
+
+.friends img
+  {
+  border-radius:$circle;
+  width:88px;
+  height:88px;
+  }
+
+  ion-segment
+  {
+  background:#fff!important;
+  }
+
+}

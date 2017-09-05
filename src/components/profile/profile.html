@@ -1,0 +1,181 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title><ion-icon name="arrow-back" (click)="closeprofile()"></ion-icon>Profile</ion-title>
+  </ion-toolbar>
+
+  <ion-item class="profile_outer">
+    <ion-col item-left col-3>
+      <img src="assets/img/profile1.png">
+    </ion-col >
+    <ion-col item-left col-8>
+    <h2>Warner</h2>
+    <p>26, Male America</p>
+    <ion-icon name="pin" class="pinicon"></ion-icon>  
+    <span>san francisco</span>
+
+    <div>
+<!--   <ion-segment [(ngModel)]="profileModal" primary>
+    <ion-segment-button value="Basicinfo">
+       <ion-icon name="chatbubbles"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="aboutme">
+       <ion-icon name="images"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="details">
+      <ion-icon name="quote"></ion-icon>
+    </ion-segment-button>
+  </ion-segment> -->
+
+  <div >
+  <ion-segment [(ngModel)]="type"  primary>
+    <ion-segment-button value="basicinfo">
+      <ion-icon name="chatbubbles"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="aboutme">
+      <ion-icon name="images"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="details">
+      <ion-icon name="quote"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+</div>
+</div>
+
+
+  </ion-col>
+
+
+  </ion-item>
+  </ion-header>
+
+<ion-content class="editprofile animated bounceInUp">
+
+
+<div  class="edit_inner"  [ngSwitch]="type" >
+  <ion-list  *ngSwitchCase="'basicinfo'" class="prochat chatpage">
+
+    <ion-col col-9 class="chatpagewidth1" >
+          <img src="assets/img/profile1.png" (click)="profilepage()">
+          <span class="chatpagewidthspan">Warner :</span> 
+          <span class="chatpagewidthspan1" >........., Hi. how are you. .... .. ..?</span>
+    </ion-col>
+
+    <ion-col col-9 class="chatpagewidth">
+          <img src="assets/img/pro1.jpg" (click)="profilepage()">
+          <span class="chatpagewidthspan">Olivia :</span> 
+          <span class="chatpagewidthspan1" >Fn....u hw?</span>
+    </ion-col>
+
+    <ion-col col-9 class="chatpagewidth1">
+          <img src="assets/img/profile1.png" (click)="profilepage()">
+          <span class="chatpagewidthspan">Warner :</span> 
+          <span class="chatpagewidthspan1" >Well..............:)</span>
+    </ion-col>
+
+    <ion-col col-9 class="chatpagewidth">
+          <img src="assets/img/pro1.jpg" (click)="profilepage()">
+          <span class="chatpagewidthspan">Olivia :</span> 
+          <span class="chatpagewidthspan1" >Whats up........?</span>
+    </ion-col>
+
+    <ion-col col-9 class="chatpagewidth1">
+          <img src="assets/img/profile1.png" (click)="profilepage()">
+          <span class="chatpagewidthspan">Warner :</span> 
+          <span class="chatpagewidthspan1" >........., Going good....</span>
+    </ion-col>
+
+    <ion-col col-9 class="chatpagewidth">
+          <img src="assets/img/pro1.jpg" (click)="profilepage()">
+          <span class="chatpagewidthspan">Olivia :</span> 
+          <span class="chatpagewidthspan1" >Okay...fine .........,</span>
+    </ion-col>
+
+
+
+
+
+<!--   <ion-row class="bottom_gap">
+    
+  </ion-row> -->
+
+
+
+<ion-toolbar class="profile_bottom" light>
+<ion-col col-8 >
+  <ion-input type="text" value="" placeholder="Type Something...."></ion-input>
+</ion-col>
+<ion-col col-2>
+
+    <button class="">
+      <ion-icon name="camera"  color="primary"></ion-icon>
+    </button>
+
+</ion-col>
+<ion-col col-2 >
+
+    <button class="">
+      <ion-icon name="send" color="primary"></ion-icon>
+    </button>
+
+</ion-col>
+</ion-toolbar>
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'aboutme'">
+    <ion-item class="photos">
+      <ion-col col-3><img src="assets/img/pro1.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro2.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro3.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro4.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro5.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro6.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro7.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro8.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro9.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro10.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro11.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro12.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro13.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro7.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro6.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro5.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro4.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro3.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro2.jpg"></ion-col>
+      <ion-col col-3><img src="assets/img/pro1.jpg"></ion-col>
+    </ion-item>
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'details'">
+  <ion-card>
+   <ion-card-content>
+    The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+  </ion-card-content>
+</ion-card>
+    <ion-card>
+  <ion-item>
+
+      <img src="assets/img/profile1.png">
+
+    <h2>Marty McFly</h2>
+    <p>November 5, 1955</p>
+  </ion-item>
+  <img src="assets/img/nin-live.png"/>
+
+  <ion-item>
+    <button ion-button color="primary" clear item-left>
+      <ion-icon name="thumbs-up"></ion-icon>
+      <div>12 Likes</div>
+    </button>
+    <button ion-button color="primary" clear item-left (click)="commentspage()">
+      <ion-icon name="text"></ion-icon>
+      <div>4 Comments</div>
+    </button>
+    <ion-note item-right>
+      11h ago
+    </ion-note>
+  </ion-item>
+</ion-card>
+  </ion-list>
+</div>
+</ion-content>

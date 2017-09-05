@@ -1,0 +1,56 @@
+page-loginpage {
+ion-content
+{
+  background:#32db64!important;
+}
+.login
+{
+  background::color($colors,primary);
+}
+
+.login .login_inner
+{
+  text-align:center;
+  width:100%;
+}
+
+.login
+{
+  text-align:center;
+}
+
+.login h2
+{
+  text-align:center;
+    color:color($colors,secondary);
+}
+
+.loginicon
+{
+    font-size: 140px;
+    color: #1DBF4D;
+    text-align: center;
+    width: 100%;
+}
+
+.login p
+{
+  text-align:center;
+    color:color($colors,secondary);
+}
+
+.login img
+{
+  width:65%;
+}
+
+.login button
+{
+  width:63%;
+}
+
+.toolbar-background
+{
+  border-color:color($colors,primary)!important;
+}
+}

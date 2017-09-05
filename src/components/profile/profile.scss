@@ -1,0 +1,222 @@
+profile {
+
+.profile
+{
+  background:$backgroundimage;
+  background-size:100% 100%;
+}
+
+.profile_outer
+{
+       background: rgb(26, 113, 52);
+}
+
+.smiley
+{
+    height: 70px;
+    overflow: auto;
+}
+.smiley ion-col
+{
+    float: left !important;
+    text-align: center;
+    font-size: 22px;
+        padding-top: 0;
+    padding-bottom: 0;
+}
+
+.profile_outer ion-col img
+{
+  border-radius:$circle;
+}
+
+.profile_outer .pinicon
+{
+    color:color($colors,secondary);
+}
+
+.profile_outer h2,.profile_outer p,.profile_outer span
+{
+    color:color($colors,secondary);
+}
+
+.profile .profile_inner ion-col
+{
+  padding:10px;
+   float:left; 
+   background:color($colors,primary);
+   border-radius: 5px;
+}
+
+.profile .profile_inner ion-avatar
+{
+  margin:0;
+}
+
+.profile .profile_inner  img
+{
+  float:left; 
+  margin-right:10px;
+}
+
+.profile_inner_name
+{
+  display: inherit; 
+  padding: 10px; 
+    color:color($colors,secondary);
+}
+
+.profile_inner_chat
+{
+  float:right;
+}
+
+.profile_bottom col-8
+{
+  float:left;
+}
+
+.profile_bottom col-2
+{
+  float:left;
+   line-height: 37px;
+}
+
+.profile_smiley
+{
+  min-height: 70px;
+}
+
+.profile_bottom ion-col
+{
+  float:left;
+}
+
+.profile_bottom
+{
+  position:fixed;
+  bottom: 0;
+}
+
+.bottom_gap
+{
+  margin-bottom:75px;
+}
+
+.prochat
+{
+  margin-bottom:62px;
+  border:none;
+  float: left;
+  position:relative;
+}
+
+.photos
+{
+    background: transparent;
+    border: none;
+    border-bottom:none!important;
+    border-top:none!important;
+}
+
+.profile_bottom col-2
+{
+  margin-top:5px;
+  font-size: 22px;
+}
+
+
+.photos
+{
+    background: transparent;
+    border: none;
+    border-bottom:none!important;
+    border-top:none!important;
+}
+
+.photos ion-col
+{
+    float:left;  
+}
+
+.profile_bottom button
+{
+  background:transparent!important;
+}
+
+button ion-icon
+{
+  font-size:26px!important;
+}
+
+.photos .item-inner 
+{
+  border-bottom:none!important;
+}
+
+.chatpagewidth
+{
+    padding: 10px;
+    float: left;
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 5px;
+    color:color($colors,secondary);
+    margin:5px;
+}
+
+.chatpagewidth1
+{
+    padding: 10px;
+    float: right!important;
+    background: rgba(255, 255, 255, 0.26);
+    border-radius: 5px;
+    color:color($colors,secondary);
+    margin:5px;
+
+}
+
+.chatpagewidth img,.chatpagewidth1 img
+{
+  float:left;
+   margin-right:10px;
+}
+
+.chatpagewidth ion-avatar
+{
+  margin:0;
+}
+
+.chatpagewidthspan
+{
+  display: inherit;
+  padding: 10px;
+  color:color($colors,primary);
+  text-align:left;
+}
+
+.chatpagewidthspan1
+{
+    float: left;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.bottom_type .bottom_type_first
+{
+  float:left;
+}
+
+.bottom_type .bottom_type_second
+{
+  float:left; 
+  line-height: 37px;
+}
+
+.chatpagewidth img,.chatpagewidth1 img {
+    max-width: 4rem;
+    max-height: 4rem;
+    border-radius: 2rem;
+}
+
+
+}

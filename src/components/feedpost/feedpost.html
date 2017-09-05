@@ -1,0 +1,31 @@
+<ion-header >
+<ion-toolbar color="primary">
+
+    <button ion-button start color="secondary" (click)="closefeedpost()">
+        <ion-icon name="close"></ion-icon> Cancel
+    </button>
+
+  <ion-title style="float: left; margin: 10px 0;">Write Post</ion-title>
+
+    <button ion-button end color="secondary">
+        <ion-icon name="send"></ion-icon> Post
+    </button>
+
+</ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+<textarea rows="5" placeholder="Type Here..." style="width:100%; padding: 10px; margin-top: 3px;"></textarea>
+  <!-- {{text}} -->
+
+</ion-content>
+<ion-footer>
+<ion-toolbar class="photoblock" position="bottom">
+    <button ion-button start color="primary">
+Photo
+      <ion-icon name="camera"></ion-icon>
+    </button>
+
+</ion-toolbar>
+</ion-footer>
